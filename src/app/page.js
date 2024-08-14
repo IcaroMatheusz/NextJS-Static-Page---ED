@@ -4,91 +4,64 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+      <div className={styles.header}>
+        <h1 className="roboto">Ed</h1>
+      </div>
+      
+
+      <div className={styles.section}>
+        
+        <div className={styles.mainImage}>
+          <Image
+            src="/images/ed.png" 
+            width={440}
+            height={594}
             />
-          </a>
+
+          
+
+
+
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <div className={styles.description}>
+          <p className="roboto">
+            Um jovem usuário de Psycho Power que
+            teve o envelhecimento acelerado pelos
+            experimentos da Shadaloo em uma jornada para
+            libertar outras cobaias. Tem o pavio curto
+            e a boca suja de Balrog, seu antigo mentor.
           </p>
-        </a>
+          
+          <p className="roboto">
+            Altura: 1,82m
+          </p>
+
+          <p className="roboto">
+            Peso: 86kg
+          </p>
+
+           <div className={styles.rowImages}>
+
+            <Image
+              src="/image/ed_ss03.jpg" 
+              width={600}
+              height={300}
+            />
+
+            <Image
+              src="/image/ed_ss04.jpg" 
+              width={600}
+              height={300}
+            />
+
+            <Image
+              src="/image/ed_ss02.jpg" 
+              width={600}
+              height={300}
+            />
+          </div>
+        </div>
       </div>
     </main>
   );
